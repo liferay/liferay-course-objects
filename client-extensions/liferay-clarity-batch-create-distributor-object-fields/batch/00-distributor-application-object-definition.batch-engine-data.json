@@ -1,0 +1,514 @@
+{
+	"configuration": {
+		"className": "com.liferay.object.admin.rest.dto.v1_0.ObjectField",
+		"parameters": {
+			"containsHeaders": "true",
+			"createStrategy": "INSERT",
+			"onErrorFail": "false",
+			"updateStrategy": "UPDATE",
+			"externalReferenceCode": "D4B8_DISTRIBUTOR_APPLICATION"
+		},
+		"taskItemDelegateName": "DEFAULT"
+	},
+	"items": [
+		{
+			"DBType": "String",
+			"externalReferenceCode": "BANK_ACCOUNT_NUMBER",
+			"indexed": true,
+			"indexedAsKeyword": false,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Bank Account Number"
+			},
+			"name": "bankAccountNumber",
+			"required": false,
+			"businessType": "Text",
+			"readOnly": "false"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BANK_ADDRESS_LINE_1",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Bank Address Line 1"
+			},
+			"name": "bankAddressLine1",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BANK_ADDRESS_LINE_2",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Bank Address Line 2"
+			},
+			"name": "bankAddressLine2",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BANK_CITY",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Bank City"
+			},
+			"name": "bankCity",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BANK_COUNTRY",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Bank Country"
+			},
+			"name": "bankCountry",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BANK_NAME",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Bank Name"
+			},
+			"name": "bankName",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BANK_PHONE_NUMBER",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Bank Phone Number"
+			},
+			"name": "bankPhoneNumber",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BANK_STATE_PROVINCE_REGION",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Bank State, Province, Region"
+			},
+			"name": "bankStateProvinceRegion",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BANK_ZIP_POSTAL_CODE",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Bank ZIP, Postal Code"
+			},
+			"name": "bankZIPPostalCode",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BUSINESS_ADDRESS_LINE_1",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business Address Line 1"
+			},
+			"name": "businessAddressLine1",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BUSINESS_ADDRESS_LINE_2",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business Address Line 2"
+			},
+			"name": "businessAddressLine2",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BUSINESS_ANNUAL_REVENUE",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business Annual Revenue (In USD)"
+			},
+			"name": "businessAnnualRevenueInUSD",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BUSINESS_CITY",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business City"
+			},
+			"name": "businessCity",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BUSINESS_COUNTRY",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business Country"
+			},
+			"name": "businessCountry",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "Integer",
+			"businessType": "Integer",
+			"externalReferenceCode": "BUSINESS_EMPLOYEE_NUMBER",
+			"indexed": true,
+			"label": {
+				"en_US": "Business Employee Number"
+			},
+			"name": "businessEmployeeNumber",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "Integer"
+		},
+		{
+			"DBType": "Date",
+			"businessType": "Date",
+			"externalReferenceCode": "BUSINESS_ESTABLISHED_DATE",
+			"indexed": true,
+			"label": {
+				"en_US": "Business Established Date"
+			},
+			"name": "businessEstablishedDate",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "Date"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BUSINESS_LICENSE_NUMBER",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business License Number"
+			},
+			"name": "businessLicenseNumber",
+			"readOnly": "false",
+			"required": true,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BUSINESS_PHONE_NUMBER",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business Phone Number"
+			},
+			"name": "businessPhoneNumber",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "Long",
+			"businessType": "Attachment",
+			"externalReferenceCode": "BUSINESS_PROOF_OF_INSURANCE",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business Proof of Insurance"
+			},
+			"name": "businessProofOfInsurance",
+			"objectFieldSettings": [
+				{
+					"name": "acceptedFileExtensions",
+					"value": "jpeg, jpg, pdf, png"
+				},
+				{
+					"name": "fileSource",
+					"value": "userComputer"
+				},
+				{
+					"name": "maximumFileSize",
+					"value": 100
+				},
+				{
+					"name": "showFilesInDocumentsAndMedia",
+					"value": true
+				},
+				{
+					"name": "storageDLFolderPath",
+					"value": "/DistributorApplication"
+				}
+			],
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "Long"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BUSINESS_RESALE_NUMBER",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business Resale Number"
+			},
+			"name": "businessResaleNumber",
+			"readOnly": "false",
+			"required": true,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BUSINESS_STATE_PROVINCE_REGION",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business State, Province, Region"
+			},
+			"name": "businessStateProvinceRegion",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BUSINESS_TAX_ID_NUMBER",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business Tax ID Number"
+			},
+			"name": "businessTaxIDNumber",
+			"readOnly": "false",
+			"required": true,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BUSINESS_WEBSITE_URL",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business Website URL"
+			},
+			"name": "businessWebsiteURL",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "BUSINESS_ZIP_POSTAL_CODE",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Business ZIP, Postal Code"
+			},
+			"name": "businessZIPPostalCode",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "REFERENCE_ADDRESS_LINE_1",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Reference Address Line 1"
+			},
+			"name": "referenceAddressLine1",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "REFERENCE_ADDRESS_LINE_2",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Reference Address Line 2"
+			},
+			"name": "referenceAddressLine2",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "REFERENCE_CITY",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Reference City"
+			},
+			"name": "referenceCity",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "REFERENCE_COUNTRY",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Reference Country"
+			},
+			"name": "referenceCountry",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "REFERENCE_PHONE_NUMBER",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Reference Phone Number"
+			},
+			"name": "referencePhoneNumber",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "REFERENCE_STATE_PROVINCE_REGION",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Reference State, Province, Region"
+			},
+			"name": "referenceStateProvinceRegion",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "REFERENCE_SUPPLIER_NAME",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Reference Supplier Name"
+			},
+			"name": "referenceSupplierName",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "REFERENCE_ZIP_POSTAL_CODE",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Reference ZIP, Postal Code"
+			},
+			"name": "referenceZIPPostalCode",
+			"readOnly": "false",
+			"required": false,
+			"state": false,
+			"type": "String"
+		}
+	]
+}
