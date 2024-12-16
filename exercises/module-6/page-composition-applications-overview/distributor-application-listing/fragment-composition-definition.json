@@ -1,0 +1,739 @@
+{
+    "definition": {
+      "fragmentStyle": {
+        "backgroundFragmentImage": {},
+        "marginBottom": "3",
+        "paddingBottom": "3",
+        "paddingLeft": "3",
+        "paddingRight": "3",
+        "paddingTop": "3"
+      },
+      "indexed": true,
+      "layout": {
+        "marginBottom": 1,
+        "paddingBottom": 1,
+        "paddingLeft": 1,
+        "paddingRight": 1,
+        "paddingTop": 1,
+        "widthType": "Fixed"
+      },
+      "name": "Application Listing"
+    },
+    "id": "c12e0110-e2e4-5a2b-969a-fc7a816acc54",
+    "pageElements": [
+      {
+        "definition": {
+          "fragment": {
+            "key": "BASIC_COMPONENT-heading"
+          },
+          "fragmentConfig": {
+            "textAlign": "left",
+            "marginBottom": "3",
+            "headingLevel": "h1"
+          },
+          "fragmentFields": [
+            {
+              "id": "element-text",
+              "value": {
+                "fragmentLink": {},
+                "text": {
+                  "value_i18n": {
+                    "en_US": "Distributor Applications"
+                  }
+                }
+              }
+            }
+          ],
+          "fragmentStyle": {
+            "hidden": true
+          },
+          "indexed": true,
+          "name": "Application Page Header"
+        },
+        "id": "99de66d4-27a4-ce78-5af5-f2d18b457e86",
+        "type": "Fragment"
+      },
+      {
+        "definition": {
+          "fragment": {
+            "key": "com.liferay.fragment.renderer.collection.filter.internal.CollectionFilterFragmentRenderer"
+          },
+          "fragmentConfig": {
+            "filterKey": "keywords",
+            "targetCollections": [
+              "77f07afe-05ad-d3d4-1c6c-14fb222ff9ba"
+            ],
+            "showLabel": true
+          },
+          "fragmentFields": [],
+          "indexed": true,
+          "name": "Application Filter"
+        },
+        "id": "d2e08ebf-b96b-f3ac-0d4d-e55e81d1462a",
+        "type": "Fragment"
+      },
+      {
+        "definition": {
+          "fragmentStyle": {
+            "marginBottom": "3"
+          },
+          "gutters": true,
+          "indexed": true,
+          "modulesPerRow": 5,
+          "name": "Application Header Grid",
+          "numberOfColumns": 5,
+          "reverseOrder": false,
+          "rowViewports": [
+            {
+              "id": "landscapeMobile",
+              "rowViewportDefinition": {
+                "modulesPerRow": 1
+              }
+            },
+            {
+              "id": "portraitMobile",
+              "rowViewportDefinition": {}
+            },
+            {
+              "id": "tablet",
+              "rowViewportDefinition": {}
+            }
+          ],
+          "verticalAlignment": "top"
+        },
+        "id": "c98cf6c3-9fa9-e7a2-0429-8b1deb1585b6",
+        "pageElements": [
+          {
+            "definition": {
+              "columnViewports": [
+                {
+                  "columnViewportDefinition": {
+                    "size": 12
+                  },
+                  "id": "landscapeMobile"
+                },
+                {
+                  "columnViewportDefinition": {},
+                  "id": "portraitMobile"
+                },
+                {
+                  "columnViewportDefinition": {},
+                  "id": "tablet"
+                }
+              ],
+              "size": 1
+            },
+            "id": "3319dbd8-ea83-b3ed-4792-f95e68596849",
+            "pageElements": [
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "BASIC_COMPONENT-heading"
+                  },
+                  "fragmentConfig": {
+                    "headingLevel": "h5"
+                  },
+                  "fragmentFields": [
+                    {
+                      "id": "element-text",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "ID"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "indexed": true,
+                  "name": "ID Heading"
+                },
+                "id": "63b31710-9482-2b7b-b07a-e2dd7c8d633c",
+                "type": "Fragment"
+              }
+            ],
+            "type": "Column"
+          },
+          {
+            "definition": {
+              "columnViewports": [
+                {
+                  "columnViewportDefinition": {
+                    "size": 12
+                  },
+                  "id": "landscapeMobile"
+                },
+                {
+                  "columnViewportDefinition": {},
+                  "id": "portraitMobile"
+                },
+                {
+                  "columnViewportDefinition": {},
+                  "id": "tablet"
+                }
+              ],
+              "size": 3
+            },
+            "id": "78a79b7a-0a9d-f705-9419-c28d4bc2b445",
+            "pageElements": [
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "BASIC_COMPONENT-heading"
+                  },
+                  "fragmentConfig": {
+                    "headingLevel": "h5"
+                  },
+                  "fragmentFields": [
+                    {
+                      "id": "element-text",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "Business Name"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "indexed": true,
+                  "name": "Business Name Heading"
+                },
+                "id": "9becc7d3-4cfe-fa00-091b-2b1746835ffa",
+                "type": "Fragment"
+              }
+            ],
+            "type": "Column"
+          },
+          {
+            "definition": {
+              "columnViewports": [
+                {
+                  "columnViewportDefinition": {
+                    "size": 12
+                  },
+                  "id": "landscapeMobile"
+                },
+                {
+                  "columnViewportDefinition": {},
+                  "id": "portraitMobile"
+                },
+                {
+                  "columnViewportDefinition": {},
+                  "id": "tablet"
+                }
+              ],
+              "size": 3
+            },
+            "id": "5f60951d-13af-1665-085e-3e279af7f685",
+            "pageElements": [
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "BASIC_COMPONENT-heading"
+                  },
+                  "fragmentConfig": {
+                    "headingLevel": "h5"
+                  },
+                  "fragmentFields": [
+                    {
+                      "id": "element-text",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "Business Website"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "indexed": true,
+                  "name": "Business Website Heading"
+                },
+                "id": "2d54baa1-d0e6-f4da-7347-2b0f74df19f6",
+                "type": "Fragment"
+              }
+            ],
+            "type": "Column"
+          },
+          {
+            "definition": {
+              "columnViewports": [
+                {
+                  "columnViewportDefinition": {
+                    "size": 12
+                  },
+                  "id": "landscapeMobile"
+                },
+                {
+                  "columnViewportDefinition": {},
+                  "id": "portraitMobile"
+                },
+                {
+                  "columnViewportDefinition": {},
+                  "id": "tablet"
+                }
+              ],
+              "size": 2
+            },
+            "id": "dab694f4-a8b8-a576-b649-58e21017dedc",
+            "pageElements": [
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "BASIC_COMPONENT-heading"
+                  },
+                  "fragmentConfig": {
+                    "headingLevel": "h5"
+                  },
+                  "fragmentFields": [
+                    {
+                      "id": "element-text",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "Applicant Name"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "indexed": true,
+                  "name": "Applicant Name Heading"
+                },
+                "id": "d8596fbd-a9b4-9de7-dac1-ffdae7feea4e",
+                "type": "Fragment"
+              }
+            ],
+            "type": "Column"
+          },
+          {
+            "definition": {
+              "columnViewports": [
+                {
+                  "columnViewportDefinition": {
+                    "size": 12
+                  },
+                  "id": "landscapeMobile"
+                },
+                {
+                  "columnViewportDefinition": {},
+                  "id": "portraitMobile"
+                },
+                {
+                  "columnViewportDefinition": {},
+                  "id": "tablet"
+                }
+              ],
+              "size": 3
+            },
+            "id": "bdf13bf1-4fbe-2059-3e67-fc04228bc3e3",
+            "pageElements": [
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "BASIC_COMPONENT-heading"
+                  },
+                  "fragmentConfig": {
+                    "headingLevel": "h5"
+                  },
+                  "fragmentFields": [
+                    {
+                      "id": "element-text",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "Application State"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "indexed": true,
+                  "name": "Application State Heading"
+                },
+                "id": "5f1912e5-ea69-c28e-723d-9313ee6bf5b5",
+                "type": "Fragment"
+              }
+            ],
+            "type": "Column"
+          }
+        ],
+        "type": "Row"
+      },
+      {
+        "definition": {
+          "collectionConfig": {
+            "collectionReference": {
+              "className": "com.liferay.object.web.internal.info.collection.provider.ObjectEntrySingleFormVariationInfoCollectionProvider_16796623585306_C_DistributorApplication"
+            },
+            "collectionType": "CollectionProvider"
+          },
+          "collectionViewports": [
+            {
+              "collectionViewportDefinition": {},
+              "id": "landscapeMobile"
+            },
+            {
+              "collectionViewportDefinition": {},
+              "id": "portraitMobile"
+            },
+            {
+              "collectionViewportDefinition": {},
+              "id": "tablet"
+            }
+          ],
+          "displayAllItems": false,
+          "displayAllPages": true,
+          "listStyle": "flex-column",
+          "name": "Application Collection Display",
+          "numberOfColumns": 1,
+          "numberOfItems": 5,
+          "numberOfItemsPerPage": 20,
+          "numberOfPages": 5,
+          "paginationType": "None",
+          "showAllItems": false
+        },
+        "id": "77f07afe-05ad-d3d4-1c6c-14fb222ff9ba",
+        "pageElements": [
+          {
+            "definition": {
+              "collectionItemConfig": {}
+            },
+            "id": "8c158b07-e29f-b5ca-325e-ab5d2755272c",
+            "pageElements": [
+              {
+                "definition": {
+                  "fragmentLink": {
+                    "href": {
+                      "mapping": {
+                        "fieldKey": "LayoutPageTemplateEntry_56249",
+                        "itemReference": {
+                          "contextSource": "CollectionItem"
+                        }
+                      }
+                    }
+                  },
+                  "fragmentStyle": {
+                    "paddingBottom": "2",
+                    "paddingTop": "2"
+                  },
+                  "indexed": true,
+                  "layout": {},
+                  "name": "Application Container"
+                },
+                "id": "8d27e6be-eaf0-5e84-440f-c733f48d5ec5",
+                "pageElements": [
+                  {
+                    "definition": {
+                      "gutters": true,
+                      "indexed": true,
+                      "modulesPerRow": 5,
+                      "name": "Application Row Grid",
+                      "numberOfColumns": 5,
+                      "reverseOrder": false,
+                      "rowViewports": [
+                        {
+                          "id": "landscapeMobile",
+                          "rowViewportDefinition": {
+                            "modulesPerRow": 1
+                          }
+                        },
+                        {
+                          "id": "portraitMobile",
+                          "rowViewportDefinition": {}
+                        },
+                        {
+                          "id": "tablet",
+                          "rowViewportDefinition": {}
+                        }
+                      ],
+                      "verticalAlignment": "top"
+                    },
+                    "id": "bb38bb86-b850-b858-b52c-1ab7ab47a830",
+                    "pageElements": [
+                      {
+                        "definition": {
+                          "columnViewports": [
+                            {
+                              "columnViewportDefinition": {
+                                "size": 12
+                              },
+                              "id": "landscapeMobile"
+                            },
+                            {
+                              "columnViewportDefinition": {},
+                              "id": "portraitMobile"
+                            },
+                            {
+                              "columnViewportDefinition": {},
+                              "id": "tablet"
+                            }
+                          ],
+                          "size": 1
+                        },
+                        "id": "0b180823-733a-eef2-3b33-9da00da73343",
+                        "pageElements": [
+                          {
+                            "definition": {
+                              "fragment": {
+                                "key": "BASIC_COMPONENT-paragraph"
+                              },
+                              "fragmentConfig": {},
+                              "fragmentFields": [
+                                {
+                                  "id": "element-text",
+                                  "value": {
+                                    "fragmentLink": {},
+                                    "text": {
+                                      "mapping": {
+                                        "fieldKey": "ObjectEntry_objectEntryId",
+                                        "itemReference": {
+                                          "contextSource": "CollectionItem"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ],
+                              "indexed": true,
+                              "name": "ID"
+                            },
+                            "id": "4e74321c-d96d-4f8d-882a-331d651e4e06",
+                            "type": "Fragment"
+                          }
+                        ],
+                        "type": "Column"
+                      },
+                      {
+                        "definition": {
+                          "columnViewports": [
+                            {
+                              "columnViewportDefinition": {
+                                "size": 12
+                              },
+                              "id": "landscapeMobile"
+                            },
+                            {
+                              "columnViewportDefinition": {},
+                              "id": "portraitMobile"
+                            },
+                            {
+                              "columnViewportDefinition": {},
+                              "id": "tablet"
+                            }
+                          ],
+                          "size": 3
+                        },
+                        "id": "b21537e2-b06d-30f8-0b45-22daeaa23713",
+                        "pageElements": [
+                          {
+                            "definition": {
+                              "fragment": {
+                                "key": "BASIC_COMPONENT-paragraph"
+                              },
+                              "fragmentConfig": {},
+                              "fragmentFields": [
+                                {
+                                  "id": "element-text",
+                                  "value": {
+                                    "fragmentLink": {},
+                                    "text": {
+                                      "mapping": {
+                                        "fieldKey": "ObjectField_businessName",
+                                        "itemReference": {
+                                          "contextSource": "CollectionItem"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ],
+                              "indexed": true,
+                              "name": "Business Name"
+                            },
+                            "id": "623b617a-e9a1-5d78-dd5b-8a6cf8dc74f6",
+                            "type": "Fragment"
+                          }
+                        ],
+                        "type": "Column"
+                      },
+                      {
+                        "definition": {
+                          "columnViewports": [
+                            {
+                              "columnViewportDefinition": {
+                                "size": 12
+                              },
+                              "id": "landscapeMobile"
+                            },
+                            {
+                              "columnViewportDefinition": {},
+                              "id": "portraitMobile"
+                            },
+                            {
+                              "columnViewportDefinition": {},
+                              "id": "tablet"
+                            }
+                          ],
+                          "size": 3
+                        },
+                        "id": "7081db07-c73b-22e0-2e9f-a3391adaba8d",
+                        "pageElements": [
+                          {
+                            "definition": {
+                              "fragment": {
+                                "key": "BASIC_COMPONENT-paragraph"
+                              },
+                              "fragmentConfig": {},
+                              "fragmentFields": [
+                                {
+                                  "id": "element-text",
+                                  "value": {
+                                    "fragmentLink": {},
+                                    "text": {
+                                      "mapping": {
+                                        "fieldKey": "ObjectField_businessWebsiteURL",
+                                        "itemReference": {
+                                          "contextSource": "CollectionItem"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ],
+                              "indexed": true,
+                              "name": "Business Website"
+                            },
+                            "id": "e43e6ac8-8df6-4e53-95d5-75f7febb3b21",
+                            "type": "Fragment"
+                          }
+                        ],
+                        "type": "Column"
+                      },
+                      {
+                        "definition": {
+                          "columnViewports": [
+                            {
+                              "columnViewportDefinition": {
+                                "size": 12
+                              },
+                              "id": "landscapeMobile"
+                            },
+                            {
+                              "columnViewportDefinition": {},
+                              "id": "portraitMobile"
+                            },
+                            {
+                              "columnViewportDefinition": {},
+                              "id": "tablet"
+                            }
+                          ],
+                          "size": 2
+                        },
+                        "id": "4a1a999f-16af-e6dd-7d2c-c23a032d412e",
+                        "pageElements": [
+                          {
+                            "definition": {
+                              "fragment": {
+                                "key": "BASIC_COMPONENT-paragraph"
+                              },
+                              "fragmentConfig": {},
+                              "fragmentFields": [
+                                {
+                                  "id": "element-text",
+                                  "value": {
+                                    "fragmentLink": {},
+                                    "text": {
+                                      "mapping": {
+                                        "fieldKey": "ObjectField_applicantName",
+                                        "itemReference": {
+                                          "contextSource": "CollectionItem"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ],
+                              "indexed": true,
+                              "name": "Applicant Name"
+                            },
+                            "id": "2ab8919f-7087-ef97-a22b-0042f6c93dbe",
+                            "type": "Fragment"
+                          }
+                        ],
+                        "type": "Column"
+                      },
+                      {
+                        "definition": {
+                          "columnViewports": [
+                            {
+                              "columnViewportDefinition": {
+                                "size": 12
+                              },
+                              "id": "landscapeMobile"
+                            },
+                            {
+                              "columnViewportDefinition": {},
+                              "id": "portraitMobile"
+                            },
+                            {
+                              "columnViewportDefinition": {},
+                              "id": "tablet"
+                            }
+                          ],
+                          "size": 3
+                        },
+                        "id": "8d9223d9-0e3b-fc5c-e1cc-d9bbc769495d",
+                        "pageElements": [
+                          {
+                            "definition": {
+                              "fragment": {
+                                "key": "BASIC_COMPONENT-paragraph"
+                              },
+                              "fragmentConfig": {},
+                              "fragmentFields": [
+                                {
+                                  "id": "element-text",
+                                  "value": {
+                                    "fragmentLink": {},
+                                    "text": {
+                                      "mapping": {
+                                        "fieldKey": "ObjectField_applicationState",
+                                        "itemReference": {
+                                          "contextSource": "CollectionItem"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ],
+                              "indexed": true,
+                              "name": "Application State"
+                            },
+                            "id": "f7511d47-cb57-39a0-8988-74e4625e34c8",
+                            "type": "Fragment"
+                          }
+                        ],
+                        "type": "Column"
+                      }
+                    ],
+                    "type": "Row"
+                  }
+                ],
+                "type": "Section"
+              }
+            ],
+            "type": "CollectionItem"
+          }
+        ],
+        "type": "Collection"
+      }
+    ],
+    "type": "Section"
+}

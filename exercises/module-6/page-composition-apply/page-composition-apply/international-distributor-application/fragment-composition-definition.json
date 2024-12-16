@@ -1,0 +1,618 @@
+{
+    "definition": {
+      "fragmentStyle": {
+        "width": "600px"
+      },
+      "indexed": true,
+      "layout": {
+        "widthType": "Fixed"
+      }
+    },
+    "id": "00d7bc96-979d-9f35-cf60-df0148cf7240",
+    "pageElements": [
+      {
+        "definition": {
+          "fragment": {
+            "key": "BASIC_COMPONENT-heading"
+          },
+          "fragmentConfig": {
+            "headingLevel": "h2"
+          },
+          "fragmentFields": [
+            {
+              "id": "element-text",
+              "value": {
+                "fragmentLink": {},
+                "text": {
+                  "value_i18n": {
+                    "en_US": "International Distributor Application"
+                  }
+                }
+              }
+            }
+          ],
+          "fragmentStyle": {
+            "paddingBottom": "4",
+            "paddingTop": "4",
+            "textAlign": "center"
+          },
+          "indexed": true
+        },
+        "id": "c5b3b1c4-fec1-7f6c-3193-50e28d14c37f",
+        "type": "Fragment"
+      },
+      {
+        "definition": {
+          "formConfig": {
+            "formReference": {
+              "className": "com.liferay.object.model.ObjectDefinition#12345",
+              "classType": 0
+            },
+            "formSuccessSubmissionResult": {
+              "itemReference": {
+                "className": "com.liferay.portal.kernel.model.Layout",
+                "fields": [
+                  {
+                    "fieldName": "friendlyURL",
+                    "fieldValue": "/submitted-application-success"
+                  },
+                  {
+                    "fieldName": "privatePage",
+                    "fieldValue": "false"
+                  },
+                  {
+                    "fieldName": "siteKey",
+                    "fieldValue": "Clarity Public Enterprise Website"
+                  }
+                ]
+              }
+            }
+          },
+          "fragmentStyle": {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": "15px",
+            "borderWidth": "1px",
+            "paddingBottom": "4",
+            "paddingLeft": "4",
+            "paddingRight": "4",
+            "paddingTop": "4",
+            "width": "594px"
+          },
+          "indexed": true,
+          "layout": {
+            "widthType": "Fixed"
+          }
+        },
+        "id": "2feaefbc-ed8d-8cf9-ef2e-b4252b64a8d0",
+        "pageElements": [
+          {
+            "definition": {
+              "fragment": {
+                "key": "BASIC_COMPONENT-heading"
+              },
+              "fragmentConfig": {
+                "headingLevel": "h4"
+              },
+              "fragmentFields": [
+                {
+                  "id": "element-text",
+                  "value": {
+                    "fragmentLink": {},
+                    "text": {
+                      "value_i18n": {
+                        "en_US": "General Details"
+                      }
+                    }
+                  }
+                }
+              ],
+              "fragmentStyle": {
+                "paddingBottom": "4",
+                "paddingLeft": "2",
+                "paddingRight": "2",
+                "paddingTop": "4"
+              },
+              "indexed": true,
+              "name": "General Details Heading"
+            },
+            "id": "3f038644-02d7-fc79-609b-057af57808b8",
+            "type": "Fragment"
+          },
+          {
+            "definition": {
+              "indexed": true,
+              "layout": {}
+            },
+            "id": "c7a98c18-7887-2f2e-cd73-7d9e113011f8",
+            "pageElements": [
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "INPUTS-text-input"
+                  },
+                  "fragmentConfig": {
+                    "showCharactersCount": false,
+                    "placeholder": "",
+                    "inputFieldId": "ObjectField_applicantName"
+                  },
+                  "fragmentFields": [],
+                  "fragmentStyle": {
+                    "paddingBottom": "2",
+                    "paddingLeft": "2",
+                    "paddingRight": "2",
+                    "paddingTop": "2"
+                  },
+                  "indexed": true,
+                  "name": "Applicant Name"
+                },
+                "id": "5f25d6b1-e56a-9467-a52e-41564b9b5c04",
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "INPUTS-text-input"
+                  },
+                  "fragmentConfig": {
+                    "showCharactersCount": false,
+                    "placeholder": "",
+                    "inputFieldId": "ObjectField_applicantEmailAddress"
+                  },
+                  "fragmentFields": [],
+                  "fragmentStyle": {
+                    "paddingBottom": "2",
+                    "paddingLeft": "2",
+                    "paddingRight": "2",
+                    "paddingTop": "2"
+                  },
+                  "indexed": true,
+                  "name": "Applicant Email Address"
+                },
+                "id": "ea0a0fef-59ba-1974-73ab-723e9a6b8220",
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "INPUTS-multiselect-list"
+                  },
+                  "fragmentConfig": {
+                    "inputRequired": false,
+                    "numberOfOptions": 5,
+                    "showAllOptions": false,
+                    "inputFieldId": "ObjectField_productsOfInterest"
+                  },
+                  "fragmentFields": [],
+                  "fragmentStyle": {
+                    "paddingBottom": "2",
+                    "paddingLeft": "2",
+                    "paddingRight": "2",
+                    "paddingTop": "2"
+                  },
+                  "indexed": true,
+                  "name": "Products of Interest"
+                },
+                "id": "12b19542-ed77-c71e-b6ae-44454ef25965",
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "INPUTS-select-from-list"
+                  },
+                  "fragmentConfig": {
+                    "inputFieldId": "ObjectField_annualPurchaseVolume"
+                  },
+                  "fragmentFields": [],
+                  "fragmentStyle": {
+                    "paddingBottom": "2",
+                    "paddingLeft": "2",
+                    "paddingRight": "2",
+                    "paddingTop": "2"
+                  },
+                  "indexed": true,
+                  "name": "Annual Purchase Volume"
+                },
+                "id": "463fb848-dc3b-a672-795e-9f32513acbaf",
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "INPUTS-textarea"
+                  },
+                  "fragmentConfig": {
+                    "showCharactersCount": false,
+                    "numberOfLines": 5,
+                    "placeholder": "",
+                    "inputFieldId": "ObjectField_comments"
+                  },
+                  "fragmentFields": [],
+                  "fragmentStyle": {
+                    "paddingBottom": "4",
+                    "paddingLeft": "2",
+                    "paddingRight": "2",
+                    "paddingTop": "2"
+                  },
+                  "indexed": true,
+                  "name": "Comments"
+                },
+                "id": "8deedad8-6d20-ecc5-d9d9-7fd3c4dbcf8e",
+                "type": "Fragment"
+              }
+            ],
+            "type": "Section"
+          },
+          {
+            "definition": {
+              "fragment": {
+                "key": "BASIC_COMPONENT-heading"
+              },
+              "fragmentConfig": {
+                "headingLevel": "h4"
+              },
+              "fragmentFields": [
+                {
+                  "id": "element-text",
+                  "value": {
+                    "fragmentLink": {},
+                    "text": {
+                      "value_i18n": {
+                        "en_US": "Business Details"
+                      }
+                    }
+                  }
+                }
+              ],
+              "fragmentStyle": {
+                "paddingBottom": "4",
+                "paddingLeft": "2",
+                "paddingRight": "2",
+                "paddingTop": "4"
+              },
+              "indexed": true,
+              "name": "Business Details Heading"
+            },
+            "id": "344ace4a-fefc-b30f-5bb3-1178e9560965",
+            "type": "Fragment"
+          },
+          {
+            "definition": {
+              "gutters": true,
+              "indexed": true,
+              "modulesPerRow": 2,
+              "numberOfColumns": 2,
+              "reverseOrder": false,
+              "rowViewports": [
+                {
+                  "id": "landscapeMobile",
+                  "rowViewportDefinition": {
+                    "modulesPerRow": 1
+                  }
+                },
+                {
+                  "id": "portraitMobile",
+                  "rowViewportDefinition": {}
+                },
+                {
+                  "id": "tablet",
+                  "rowViewportDefinition": {}
+                }
+              ],
+              "verticalAlignment": "top"
+            },
+            "id": "7cb9071f-39ed-eab4-5309-8f1b4f0916af",
+            "pageElements": [
+              {
+                "definition": {
+                  "columnViewports": [
+                    {
+                      "columnViewportDefinition": {
+                        "size": 12
+                      },
+                      "id": "landscapeMobile"
+                    },
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "portraitMobile"
+                    },
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "tablet"
+                    }
+                  ],
+                  "size": 6
+                },
+                "id": "fc61ae22-47d2-31d2-dca2-74868c8446b4",
+                "pageElements": [
+                  {
+                    "definition": {
+                      "fragment": {
+                        "key": "INPUTS-text-input"
+                      },
+                      "fragmentConfig": {
+                        "showCharactersCount": false,
+                        "placeholder": "",
+                        "inputFieldId": "ObjectField_businessName"
+                      },
+                      "fragmentFields": [],
+                      "fragmentStyle": {
+                        "paddingBottom": "2",
+                        "paddingLeft": "2",
+                        "paddingRight": "2",
+                        "paddingTop": "2"
+                      },
+                      "indexed": true,
+                      "name": "Business Name"
+                    },
+                    "id": "2770e9e6-dceb-e55c-1f48-96d0b207066f",
+                    "type": "Fragment"
+                  },
+                  {
+                    "definition": {
+                      "fragment": {
+                        "key": "INPUTS-text-input"
+                      },
+                      "fragmentConfig": {
+                        "showCharactersCount": false,
+                        "placeholder": "",
+                        "inputFieldId": "ObjectField_businessWebsiteURL"
+                      },
+                      "fragmentFields": [],
+                      "fragmentStyle": {
+                        "paddingBottom": "2",
+                        "paddingLeft": "2",
+                        "paddingRight": "2",
+                        "paddingTop": "2"
+                      },
+                      "indexed": true,
+                      "name": "Business Website URL"
+                    },
+                    "id": "30592d21-ffc8-6e66-2166-d31ad5e3b243",
+                    "type": "Fragment"
+                  }
+                ],
+                "type": "Column"
+              },
+              {
+                "definition": {
+                  "columnViewports": [
+                    {
+                      "columnViewportDefinition": {
+                        "size": 12
+                      },
+                      "id": "landscapeMobile"
+                    },
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "portraitMobile"
+                    },
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "tablet"
+                    }
+                  ],
+                  "size": 6
+                },
+                "id": "2381625e-4b3d-0011-1cbe-7bae9eb14db9",
+                "pageElements": [
+                  {
+                    "definition": {
+                      "fragment": {
+                        "key": "INPUTS-select-from-list"
+                      },
+                      "fragmentConfig": {
+                        "inputFieldId": "ObjectField_businessType"
+                      },
+                      "fragmentFields": [],
+                      "fragmentStyle": {
+                        "paddingBottom": "2",
+                        "paddingLeft": "2",
+                        "paddingRight": "2",
+                        "paddingTop": "2"
+                      },
+                      "indexed": true,
+                      "name": "Business Type"
+                    },
+                    "id": "15842dff-3f50-995f-b37d-1364a4901ffd",
+                    "type": "Fragment"
+                  },
+                  {
+                    "definition": {
+                      "fragment": {
+                        "key": "INPUTS-text-input"
+                      },
+                      "fragmentConfig": {
+                        "showCharactersCount": false,
+                        "placeholder": "",
+                        "inputFieldId": "ObjectField_businessPhoneNumber"
+                      },
+                      "fragmentFields": [],
+                      "fragmentStyle": {
+                        "paddingBottom": "2",
+                        "paddingLeft": "2",
+                        "paddingRight": "2",
+                        "paddingTop": "2"
+                      },
+                      "indexed": true,
+                      "name": "Business Phone Number"
+                    },
+                    "id": "78e697a5-e4f6-f8a5-2b95-4afd35a32bf3",
+                    "type": "Fragment"
+                  }
+                ],
+                "type": "Column"
+              }
+            ],
+            "type": "Row"
+          },
+          {
+            "definition": {
+              "indexed": true,
+              "layout": {}
+            },
+            "id": "68b29543-73d8-ba68-fc12-6eb24276d1e5",
+            "pageElements": [
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "INPUTS-multiselect-list"
+                  },
+                  "fragmentConfig": {
+                    "inputRequired": false,
+                    "numberOfOptions": 3,
+                    "showAllOptions": false,
+                    "inputFieldId": "ObjectField_distributionRegions"
+                  },
+                  "fragmentFields": [],
+                  "fragmentStyle": {
+                    "paddingBottom": "2",
+                    "paddingLeft": "2",
+                    "paddingRight": "2",
+                    "paddingTop": "2"
+                  },
+                  "indexed": true,
+                  "name": "Distribution Regions"
+                },
+                "id": "02768db6-5efb-9b6f-35cc-0a947dce885a",
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "INPUTS-multiselect-list"
+                  },
+                  "fragmentConfig": {
+                    "inputRequired": false,
+                    "numberOfOptions": 5,
+                    "showAllOptions": false,
+                    "inputFieldId": "ObjectField_distributionChannels"
+                  },
+                  "fragmentFields": [],
+                  "fragmentStyle": {
+                    "paddingBottom": "2",
+                    "paddingLeft": "2",
+                    "paddingRight": "2",
+                    "paddingTop": "2"
+                  },
+                  "indexed": true,
+                  "name": "Distribution Channels"
+                },
+                "id": "89680371-0973-0a36-6768-70c03995bd98",
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "INPUTS-text-input"
+                  },
+                  "fragmentConfig": {
+                    "showCharactersCount": false,
+                    "placeholder": "",
+                    "inputFieldId": "ObjectField_businessTaxIDNumber"
+                  },
+                  "fragmentFields": [],
+                  "fragmentStyle": {
+                    "paddingBottom": "2",
+                    "paddingLeft": "2",
+                    "paddingRight": "2",
+                    "paddingTop": "2"
+                  },
+                  "indexed": true,
+                  "name": "Business Tax ID Number"
+                },
+                "id": "cd0c0460-19bd-7b57-c501-b61592ceb132",
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "BASIC_COMPONENT-heading"
+                  },
+                  "fragmentConfig": {
+                    "headingLevel": "h4"
+                  },
+                  "fragmentFields": [
+                    {
+                      "id": "element-text",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "Attachments"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "fragmentStyle": {
+                    "paddingBottom": "4",
+                    "paddingLeft": "2",
+                    "paddingRight": "2",
+                    "paddingTop": "4"
+                  },
+                  "indexed": true,
+                  "name": "Attachments Heading"
+                },
+                "id": "f45f7c05-9265-b3f6-9871-3b0feb9ae173",
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "INPUTS-file-upload"
+                  },
+                  "fragmentConfig": {
+                    "buttonText": "Select File",
+                    "showSupportedFileInfo": true,
+                    "inputFieldId": "ObjectField_businessLicense"
+                  },
+                  "fragmentFields": [],
+                  "fragmentStyle": {
+                    "paddingBottom": "2",
+                    "paddingLeft": "2",
+                    "paddingRight": "2",
+                    "paddingTop": "2"
+                  },
+                  "indexed": true,
+                  "name": "Business License"
+                },
+                "id": "49985270-0478-d7d0-29e7-0c9f8aa12d7e",
+                "type": "Fragment"
+              }
+            ],
+            "type": "Section"
+          },
+          {
+            "definition": {
+              "fragment": {
+                "key": "INPUTS-submit-button"
+              },
+              "fragmentConfig": {
+                "buttonType": "primary",
+                "submittedEntryStatus": "approved",
+                "buttonSize": "nm"
+              },
+              "fragmentFields": [
+                {
+                  "id": "submit-button-text",
+                  "value": {
+                    "fragmentLink": {}
+                  }
+                }
+              ],
+              "fragmentStyle": {
+                "paddingBottom": "4",
+                "paddingTop": "4"
+              },
+              "indexed": true
+            },
+            "id": "71b29f0f-ef98-5f2a-f3ec-0c587b01fc2a",
+            "type": "Fragment"
+          }
+        ],
+        "type": "Form"
+      }
+    ],
+    "type": "Section"
+}
