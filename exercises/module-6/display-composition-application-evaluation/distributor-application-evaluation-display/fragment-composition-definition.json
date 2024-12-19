@@ -35,7 +35,7 @@
               "rowViewportDefinition": {}
             }
           ],
-          "verticalAlignment": "top"
+          "verticalAlignment": "middle"
         },
         "id": "a6c09f9b-04b9-a004-04fd-836430538ec7",
         "pageElements": [
@@ -122,8 +122,6 @@
                 "definition": {
                   "indexed": true,
                   "layout": {
-                    "align": "Center",
-                    "contentDisplay": "FlexColumn",
                     "widthType": "Fixed"
                   },
                   "name": "Evaluation ID Container"
@@ -205,6 +203,9 @@
                                   }
                                 }
                               ],
+                              "fragmentStyle": {
+                                "textAlign": "right"
+                              },
                               "indexed": true,
                               "name": "Evaluation ID Heading"
                             },
@@ -253,7 +254,6 @@
                                 }
                               ],
                               "fragmentStyle": {
-                                "paddingBottom": "4",
                                 "textColor": "colorBrandPrimaryLighten1"
                               },
                               "indexed": true,
@@ -311,7 +311,7 @@
                 "key": "BASIC_COMPONENT-heading"
               },
               "fragmentConfig": {
-                "headingLevel": "h5"
+                "headingLevel": "h4"
               },
               "fragmentFields": [
                 {
@@ -327,7 +327,8 @@
                 }
               ],
               "fragmentStyle": {
-                "paddingBottom": "2"
+                "marginBottom": "4",
+                "paddingLeft": "4"
               },
               "indexed": true,
               "name": "Applicant Details Heading"
@@ -729,25 +730,6 @@
             "formReference": {
               "className": "com.liferay.object.model.ObjectDefinition#12345",
               "classType": 0
-            },
-            "formSuccessSubmissionResult": {
-              "itemReference": {
-                "className": "com.liferay.portal.kernel.model.Layout",
-                "fields": [
-                  {
-                    "fieldName": "friendlyURL",
-                    "fieldValue": "/evaluations-overview"
-                  },
-                  {
-                    "fieldName": "privatePage",
-                    "fieldValue": "false"
-                  },
-                  {
-                    "fieldName": "siteKey",
-                    "fieldValue": "Clarity Public Enterprise Website"
-                  }
-                ]
-              }
             }
           },
           "fragmentStyle": {
@@ -788,15 +770,71 @@
                 }
               ],
               "fragmentStyle": {
-                "paddingBottom": "4",
-                "paddingLeft": "2",
-                "paddingRight": "2",
-                "paddingTop": "4"
+                "marginBottom": "4"
               },
               "indexed": true,
               "name": "General Details Heading"
             },
             "id": "d17200bc-b242-44f2-688a-e5536987304d",
+            "type": "Fragment"
+          },
+          {
+            "definition": {
+              "fragment": {
+                "key": "INPUTS-select-from-list"
+              },
+              "fragmentConfig": {
+                "inputLabel": {
+                  "en_US": "Related Distributor Application"
+                },
+                "inputFieldId": "ObjectField_r_applicationToEvaluations_c_distributorApplicationId"
+              },
+              "fragmentFields": [],
+              "fragmentStyle": {
+                "marginBottom": "4"
+              },
+              "indexed": true,
+              "name": "Related Distributor Application"
+            },
+            "id": "59fe8a90-d496-1350-16fb-cfa30df7f441",
+            "type": "Fragment"
+          },
+          {
+            "definition": {
+              "fragment": {
+                "key": "INPUTS-rich-text-input"
+              },
+              "fragmentConfig": {
+                "inputFieldId": "ObjectField_interviewNotes"
+              },
+              "fragmentFields": [],
+              "fragmentStyle": {
+                "marginBottom": "4"
+              },
+              "indexed": true,
+              "name": "Interview Notes"
+            },
+            "id": "ef0068b3-d601-115e-0369-e9f6320cf94d",
+            "type": "Fragment"
+          },
+          {
+            "definition": {
+              "fragment": {
+                "key": "INPUTS-file-upload"
+              },
+              "fragmentConfig": {
+                "buttonText": "Select File",
+                "showSupportedFileInfo": true,
+                "inputFieldId": "ObjectField_attachment"
+              },
+              "fragmentFields": [],
+              "fragmentStyle": {
+                "marginBottom": "4"
+              },
+              "indexed": true,
+              "name": "Attachment"
+            },
+            "id": "9038c588-a21b-8af5-d3ac-4e95a5d1e18e",
             "type": "Fragment"
           },
           {
@@ -821,15 +859,71 @@
                 }
               ],
               "fragmentStyle": {
-                "paddingBottom": "4",
-                "paddingLeft": "2",
-                "paddingRight": "2",
-                "paddingTop": "4"
+                "marginBottom": "4"
               },
               "indexed": true,
               "name": "Business Details Heading"
             },
-            "id": "59fe8a90-d496-1350-16fb-cfa30df7f441",
+            "id": "cad1dd35-6a98-ee4e-fc26-809bde696af4",
+            "type": "Fragment"
+          },
+          {
+            "definition": {
+              "fragment": {
+                "key": "INPUTS-multiselect-list"
+              },
+              "fragmentConfig": {
+                "numberOfOptions": 5,
+                "showAllOptions": true,
+                "inputFieldId": "ObjectField_recommendations"
+              },
+              "fragmentFields": [],
+              "fragmentStyle": {
+                "marginBottom": "4"
+              },
+              "indexed": true,
+              "name": "Recommendations"
+            },
+            "id": "ca165e73-3835-3e20-f9b8-23f7a7c65c5c",
+            "type": "Fragment"
+          },
+          {
+            "definition": {
+              "fragment": {
+                "key": "INPUTS-textarea"
+              },
+              "fragmentConfig": {
+                "showCharactersCount": false,
+                "numberOfLines": 5,
+                "placeholder": "",
+                "inputFieldId": "ObjectField_recommendationComments"
+              },
+              "fragmentFields": [],
+              "fragmentStyle": {
+                "marginBottom": "4"
+              },
+              "indexed": true,
+              "name": "Recommendation Comments"
+            },
+            "id": "da0c7f15-8dbe-fa6b-1eac-7538dd43376a",
+            "type": "Fragment"
+          },
+          {
+            "definition": {
+              "fragment": {
+                "key": "INPUTS-select-from-list"
+              },
+              "fragmentConfig": {
+                "inputFieldId": "ObjectField_assessmentScore"
+              },
+              "fragmentFields": [],
+              "fragmentStyle": {
+                "marginBottom": "4"
+              },
+              "indexed": true,
+              "name": "Assessment Score"
+            },
+            "id": "6100dbb6-0d86-0ae6-5c4a-4db49e48c539",
             "type": "Fragment"
           },
           {
@@ -854,15 +948,12 @@
                 }
               ],
               "fragmentStyle": {
-                "paddingBottom": "4",
-                "paddingLeft": "2",
-                "paddingRight": "2",
-                "paddingTop": "4"
+                "marginBottom": "4"
               },
               "indexed": true,
               "name": "Attachments Heading"
             },
-            "id": "b297db2b-45b2-411d-1dc6-e6a679464270",
+            "id": "9ed1b1eb-0952-6f1f-0950-8041c0c136e0",
             "type": "Fragment"
           },
           {
@@ -871,111 +962,17 @@
                 "key": "INPUTS-select-from-list"
               },
               "fragmentConfig": {
-                "inputFieldId": "ObjectField_assessmentScore"
-              },
-              "fragmentFields": [],
-              "indexed": true,
-              "name": "Assessment Score"
-            },
-            "id": "46a4fc87-3097-0757-068f-93e89a606e6e",
-            "type": "Fragment"
-          },
-          {
-            "definition": {
-              "fragment": {
-                "key": "INPUTS-file-upload"
-              },
-              "fragmentConfig": {
-                "buttonText": "Select File",
-                "showSupportedFileInfo": true,
-                "inputFieldId": "ObjectField_attachment"
-              },
-              "fragmentFields": [],
-              "indexed": true,
-              "name": "Attachment"
-            },
-            "id": "9038c588-a21b-8af5-d3ac-4e95a5d1e18e",
-            "type": "Fragment"
-          },
-          {
-            "definition": {
-              "fragment": {
-                "key": "INPUTS-select-from-list"
-              },
-              "fragmentConfig": {
+                "inputLabel": {
+                  "en_US": "Decision"
+                },
                 "inputFieldId": "ObjectField_decision"
               },
               "fragmentFields": [],
-              "indexed": true,
-              "name": "Decisions"
-            },
-            "id": "cad1dd35-6a98-ee4e-fc26-809bde696af4",
-            "type": "Fragment"
-          },
-          {
-            "definition": {
-              "fragment": {
-                "key": "INPUTS-rich-text-input"
-              },
-              "fragmentConfig": {
-                "inputFieldId": "ObjectField_interviewNotes"
-              },
-              "fragmentFields": [],
-              "indexed": true,
-              "name": "Interview Notes"
-            },
-            "id": "ca165e73-3835-3e20-f9b8-23f7a7c65c5c",
-            "type": "Fragment"
-          },
-          {
-            "definition": {
-              "fragment": {
-                "key": "INPUTS-textarea"
-              },
-              "fragmentConfig": {
-                "showCharactersCount": false,
-                "numberOfLines": 5,
-                "placeholder": "",
-                "inputFieldId": "ObjectField_recommendationComments"
-              },
-              "fragmentFields": [],
-              "indexed": true,
-              "name": "Recommendation Comments"
-            },
-            "id": "da0c7f15-8dbe-fa6b-1eac-7538dd43376a",
-            "type": "Fragment"
-          },
-          {
-            "definition": {
-              "fragment": {
-                "key": "INPUTS-multiselect-list"
-              },
-              "fragmentConfig": {
-                "numberOfOptions": 5,
-                "showAllOptions": false,
-                "inputFieldId": "ObjectField_recommendations"
-              },
-              "fragmentFields": [],
-              "indexed": true,
-              "name": "Recommendations"
-            },
-            "id": "f7809355-d72b-0698-e2e4-97015b361dc6",
-            "type": "Fragment"
-          },
-          {
-            "definition": {
-              "fragment": {
-                "key": "INPUTS-select-from-list"
-              },
-              "fragmentConfig": {
-                "inputFieldId": "ObjectField_r_applicationToEvaluations_c_distributorApplicationId"
-              },
-              "fragmentFields": [],
               "fragmentStyle": {
-                "opacity": "0"
+                "marginBottom": "4"
               },
               "indexed": true,
-              "name": "Application to Evaluations"
+              "name": "Decision"
             },
             "id": "4da0952f-ec78-df22-71e6-369fbf21ba1e",
             "type": "Fragment"
