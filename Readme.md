@@ -1,14 +1,11 @@
-# liferay-course-objects Repository
+# Mastering Data Modeling with Liferay Objects
 
-This repository contains the Liferay Course Objects materials.
-
-The main branch is the starting point for the course, and the other branches have the results from the end of the module exercises.
+This repository contains the Mastering Data Modeling with Liferay Objects course materials.
 
 ## Table of Contents
 
 - [Bundle Preparation](#bundle-preparation)
 - [Starting and Stopping the Bundle](#starting-and-stopping-the-bundle)
-- [Exercise 01: Adding Data Models for Clarity's Distributor Solution](#exercise-01-adding-data-models-for-claritys-distributor-solution)
 
 ## Bundle Preparation
 
@@ -56,12 +53,3 @@ Once you have prepared your Liferay bundle, you can start and stop it using the 
 
 By following these steps, you can effectively manage the lifecycle of your Liferay bundle, ensuring a smooth development and testing process.
 
-
-
-
-
-## Exercise 01: Adding Data Models for Clarity's Distributor Solution
-
-In this exercise, you will learn how to add data models to enhance the clarity of the distributor solution. This involves creating and configuring the necessary data structures to support the application's functionality. Follow the steps outlined in the course materials to complete this exercise successfully.
-
-The solution for this exercise is under the `exercise-01` branch.
