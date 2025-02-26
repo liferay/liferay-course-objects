@@ -19,7 +19,8 @@
  import org.springframework.web.bind.annotation.RestController;
  
  /**
-  * Invoked when a new user account has been created.
+  * Invoked when a Distributor Application is approved and an Account
+  * needs to be created.
   *
   * @author Raymond Augé
   * @author Gregory Amerson
@@ -32,13 +33,14 @@
  
 	 @Autowired
 	 public ObjectActionAccountRestController(
-		 UserCreatedRequestQueueManager queueManager) {
+		 AccountCreationRequestQueueManager queueManager) {
  
 		 _queueManager = queueManager;
 	 }
  
 	 /**
-	  * Invoked when a new user account has been created.
+	  * Invoked when a Distributor Application is approved and an Account
+	  * needs to be created.
 	  *
 	  * @param jwt the JWT token
 	  * @param json the user creation request in JSON format
@@ -54,7 +56,7 @@
  
 		 // Create the request instance
  
-		 UserCreatedRequest request = new UserCreatedRequest(json, jwt);
+		 AccountCreationRequest request = new AccountCreationRequest(json, jwt);
  
 		 // Enqueue the request
  
@@ -68,6 +70,6 @@
 	 private static final Log _log = LogFactory.getLog(
 		 ObjectActionAccountRestController.class);
  
-	 private final UserCreatedRequestQueueManager _queueManager;
+	 private final AccountCreationRequestQueueManager _queueManager;
  
  }

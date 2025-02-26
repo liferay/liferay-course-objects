@@ -20,22 +20,22 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 /**
- * Processes user creation requests.
+ * Processes account creation requests.
  *
  * @author dnebing
  */
 @Service
-public class UserCreatedRequestProcessorService {
+public class AccountCreationRequestProcessorService {
 
 	/**
-	 * Constructs a new UserCreationRequestProcessorService.
+	 * Constructs a new AccountCreationRequestProcessorService.
 	 *
 	 * @param queueManager the queue manager
 	 * @param taskExecutor the task executor
 	 */
 	@Autowired
-	public UserCreatedRequestProcessorService(
-		UserCreatedRequestQueueManager queueManager,
+	public AccountCreationRequestProcessorService(
+		AccountCreationRequestQueueManager queueManager,
 		TaskExecutor taskExecutor) {
 
 		_queueManager = queueManager;
@@ -57,13 +57,13 @@ public class UserCreatedRequestProcessorService {
 	}
 
 	/**
-	 * Processes a user creation request.
+	 * Processes an account creation request.
 	 *
-	 * @param userJson the user creation request in JSON format
+	 * @param accountJson the account creation request in JSON format
 	 */
-	private void _processRequest(UserCreatedRequest request) {
+	private void _processRequest(AccountCreationRequest request) {
 		try {
-			JSONObject jsonObject = new JSONObject(request.getUserJSON());
+			JSONObject jsonObject = new JSONObject(request.getAccountJSON());
 
 			JSONObject objectEntryDTODistributorApplicationJSONObject =
 				jsonObject.getJSONObject(
@@ -181,12 +181,12 @@ public class UserCreatedRequestProcessorService {
 		}
 		catch (Exception exception) {
 			_log.error(
-				"Failed to process user: {}", request.getUserJSON(), exception);
+				"Failed to process account: {}", request.getAccountJSON(), exception);
 		}
 	}
 
 	/**
-	 * Starts the processing of user creation requests.
+	 * Starts the processing of account creation requests.
 	 */
 	private void _startProcessing() {
 		_taskExecutor.execute(
@@ -196,7 +196,7 @@ public class UserCreatedRequestProcessorService {
 						_queueManager.awaitWork(); // Wait for work if the queue is empty
 
 						while (!_queueManager.isEmpty()) {
-							UserCreatedRequest request =
+							AccountCreationRequest request =
 								_queueManager.dequeue();
 
 							_processRequest(request);
@@ -230,9 +230,9 @@ public class UserCreatedRequestProcessorService {
 	}
 
 	private static final Logger _log = LoggerFactory.getLogger(
-		UserCreatedRequestProcessorService.class);
+		AccountCreationRequestProcessorService.class);
 
-	private final UserCreatedRequestQueueManager _queueManager;
+	private final AccountCreationRequestQueueManager _queueManager;
 	private final TaskExecutor _taskExecutor;
 
 }

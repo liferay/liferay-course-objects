@@ -6,7 +6,7 @@ import org.springframework.core.task.TaskExecutor;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 /**
- * Creates the task executor which will be processing the user creation requests.
+ * Creates the task executor which will be processing the account creation requests.
  *
  * @author dnebing
  */
@@ -26,7 +26,7 @@ public class TaskExecutorConfig {
 		threadPoolTaskExecutor.setCorePoolSize(0);
 		threadPoolTaskExecutor.setMaxPoolSize(10);
 		threadPoolTaskExecutor.setQueueCapacity(100);
-		threadPoolTaskExecutor.setThreadNamePrefix("CreateUserTaskExecutor-");
+		threadPoolTaskExecutor.setThreadNamePrefix("CreateAccountTaskExecutor-");
 
 		// initialize the task executor
 

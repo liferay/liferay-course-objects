@@ -8,12 +8,12 @@ import java.util.concurrent.locks.ReentrantLock;
 import org.springframework.stereotype.Service;
 
 /**
- * Manages the queue of user creation requests.
+ * Manages the queue of account creation requests.
  *
  * @author dnebing
  */
 @Service
-public class UserCreatedRequestQueueManager {
+public class AccountCreationRequestQueueManager {
 
 	/**
 	 * Waits for work to be available.
@@ -34,12 +34,12 @@ public class UserCreatedRequestQueueManager {
 	}
 
 	/**
-	 * Dequeues a user creation request.
+	 * Dequeues an account creation request.
 	 *
-	 * @return the user creation request
-	 * @throws InterruptedException if the thread is interrupted while waiting for a user creation request
+	 * @return the account creation request
+	 * @throws InterruptedException if the thread is interrupted while waiting for an account creation request
 	 */
-	public UserCreatedRequest dequeue() throws InterruptedException {
+	public AccountCreationRequest dequeue() throws InterruptedException {
 
 		// Remove the request from the queue
 
@@ -47,15 +47,15 @@ public class UserCreatedRequestQueueManager {
 	}
 
 	/**
-	 * Enqueues a user creation request.
+	 * Enqueues an account creation request.
 	 *
-	 * @param userCreatedRequest the user creation request
+	 * @param accountCreationRequest the account creation request
 	 */
-	public void enqueue(UserCreatedRequest userCreatedRequest) {
+	public void enqueue(AccountCreationRequest accountCreationRequest) {
 
 		// Add the request to the queue
 
-		_queue.add(userCreatedRequest);
+		_queue.add(accountCreationRequest);
 
 		// signal the executor that work is available
 
@@ -87,7 +87,7 @@ public class UserCreatedRequestQueueManager {
 
 	private final ReentrantLock _lock = new ReentrantLock();
 	private final Condition _notEmpty = _lock.newCondition();
-	private final BlockingQueue<UserCreatedRequest> _queue =
+	private final BlockingQueue<AccountCreationRequest> _queue =
 		new LinkedBlockingQueue<>();
 
 }
