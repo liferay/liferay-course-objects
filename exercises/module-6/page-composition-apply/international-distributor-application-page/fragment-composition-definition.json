@@ -48,7 +48,7 @@
             "definition": {
                 "formConfig": {
                     "formReference": {
-                        "className": "com.liferay.object.model.ObjectDefinition#12345",
+                        "className": "com.liferay.object.model.ObjectDefinition#M8T7",
                         "classType": 0
                     },
                     "formType": "multistep",
