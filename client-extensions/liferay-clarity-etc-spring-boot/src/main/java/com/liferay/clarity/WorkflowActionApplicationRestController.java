@@ -14,6 +14,7 @@ import org.json.JSONObject;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -65,13 +66,13 @@ public class WorkflowActionApplicationRestController
 			"{\"transitionName\": \"" + _getTransitionName(jsonObject) + "\"}"
 		).exchangeToMono(
 			clientResponse -> {
-				HttpStatus httpStatus = clientResponse.statusCode();
+				HttpStatusCode httpStatus = clientResponse.statusCode();
 
 				if (httpStatus.is2xxSuccessful()) {
 					return clientResponse.bodyToMono(String.class);
 				}
 				else if (httpStatus.is4xxClientError()) {
-					return Mono.just(httpStatus.getReasonPhrase());
+					return Mono.just(httpStatus.toString());
 				}
 
 				Mono<WebClientResponseException> mono =

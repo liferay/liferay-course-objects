@@ -14,6 +14,7 @@ import org.json.JSONObject;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -162,13 +163,13 @@ public class ObjectActionAccountRestController extends BaseRestController {
 	private Mono<ResponseEntity<String>> _transform(
 		ResponseEntity<String> responseEntity) {
 
-		HttpStatus httpStatus = responseEntity.getStatusCode();
+		HttpStatusCode httpStatusCode = responseEntity.getStatusCode();
 
-		if (httpStatus.is2xxSuccessful()) {
+		if (httpStatusCode.is2xxSuccessful()) {
 			return Mono.just(responseEntity);
 		}
 
-		return Mono.error(new RuntimeException(httpStatus.getReasonPhrase()));
+		return Mono.error(new RuntimeException(httpStatusCode.toString()));
 	}
 
 	private static final Log _log = LogFactory.getLog(
