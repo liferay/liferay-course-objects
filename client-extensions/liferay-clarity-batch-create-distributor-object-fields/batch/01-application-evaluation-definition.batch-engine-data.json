@@ -29,14 +29,14 @@
 				},
 				{
 					"name": "fileSource",
-					"value": "userComputer"
+					"value": "userComputerToDocumentsAndMedia"
 				},
 				{
 					"name": "maximumFileSize",
 					"value": 100
 				},
 				{
-					"name": "showFilesInDocumentsAndMedia",
+					"name": "showFilesInLibrary",
 					"value": false
 				}
 			],
